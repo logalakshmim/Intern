@@ -1,3 +1,182 @@
-body{
-    background-color :rgb(205, 197, 211);  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: #102b4e;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+header h3 {
+    color: #c8d8ec;
+    margin-bottom: 15px;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
+/* NAVIGATION */
+
+nav {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #e6ad3e;
+    color: #102b4e;
+    border: none;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+/* MAIN SECTION */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #102b4e;
+    border-bottom: 2px solid #e6ad3e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #183d66;
+    margin-top: 15px;
+}
+
+section p {
+    margin: 10px 0;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #102b4e;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f5fa;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #102b4e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+}
+
+/* PRINT */
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    header,
+    footer,
+    nav,
+    main > button {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    section {
+        box-shadow: none;
+        break-inside: avoid;
+    }
 }

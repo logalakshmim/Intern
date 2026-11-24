@@ -2,39 +2,169 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Loga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logalakshmi | Resume</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <center>
-        <h1>Logalakshmi M</h1>
-    </center>
-    <h3>Phone :7010587925||Email:logalakshmi.m2025aids@sece.ac.in</h3>
-    <h2>Education </h2>
-    <table>
-        <tr>
-            <th>Name</th>
-            
-            <th>Percentage  </th>
-            <th>Year of passing</th>
-        </tr>
-        <tr>
-            <td>SECE</td>
-            <td>8.5</td>
-            <td>2025</td>
-        </tr>
-        <tr>
-            <td>GHSS</td>
-            <td>83%</td>
-            <td>2023</td>
-        </tr>
-        <tr>
-            <td>GHSS</td>
-            <td>87%</td>
-            <td>2025</td>
-        </tr>
- </table>
-    <button>Contact me</button>
+
+<header id="home">
+
+    <h1>LOGALAKSHMI M</h1>
+
+    <h3>B.Tech - Artificial Intelligence and Data Science</h3>
+
+    <p>
+        Phone: +91 7010587925 <br>
+        Email: logalakshmi.m2025aids@sece.ac.in
+    </p>
+
+    <nav>
+        <button type="button" onclick="scrollToSection('education')">Education</button>
+        <button type="button" onclick="scrollToSection('projects')">Projects</button>
+        <button type="button" onclick="scrollToSection('skills')">Skills</button>
+        <button type="button" onclick="scrollToSection('certifications')">Certifications</button>
+        <button type="button" onclick="scrollToSection('achievements')">Achievements</button>
+    </nav>
+
+</header>
+
+<main>
+
+    <!-- EDUCATION -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <table>
+
+            <tr>
+                <th>Institution</th>
+                <th>Qualification</th>
+                <th>Score</th>
+                <th>Year</th>
+            </tr>
+
+            <tr>
+                <td>Sri Eshwar College of Engineering</td>
+                <td>B.Tech AIDS</td>
+                <td>8.6</td>
+                <td>2025-2029</td>
+            </tr>
+
+            <tr>
+                <td>Government Higher Secondary School</td>
+                <td>HSC</td>
+                <td>86.5%</td>
+                <td>2024-2025</td>
+            </tr>
+
+            <tr>
+                <td>Government Higher Secondary School</td>
+                <td>SSLC</td>
+                <td>84.6%</td>
+                <td>2022-2023</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <h3>1. Procrastination Analyzer</h3>
+
+        <ul>
+            <li>Developed a web application to help users manage tasks.</li>
+            <li>Integrated an AI chatbot to provide guidance.</li>
+            <li>Designed to improve time management.</li>
+        </ul>
+
+        <h3>2. Aqua Trace AI</h3>
+
+        <ul>
+            <li>Developed an AI platform to track plastic waste in oceans.</li>
+            <li>Built predictive models to forecast plastic drift.</li>
+            <li>Integrated satellite and weather data.</li>
+            <li>Generated alerts for cleanup teams.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <p><b>Programming Languages:</b> C, C++, Python</p>
+
+        <p><b>Web Development:</b> HTML, CSS, JavaScript</p>
+
+        <h3>Coding Profiles</h3>
+
+        <p>SkillRack - 1000+ Problems Solved</p>
+        <p>LeetCode - 60+ Problems Solved</p>
+        <p>CodeChef - 100+ Problems Solved</p>
+
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+
+    <section id="certifications">
+
+        <h2>Certifications & Courses</h2>
+
+        <ul>
+            <li>C Programming Basics - Simplilearn</li>
+            <li>Python for Beginners - Simplilearn</li>
+            <li>Advanced C++ - Simplilearn</li>
+            <li>C Programming 101 - Infosys Springboard</li>
+            <li>The Joy of Computing using Python - NPTEL</li>
+            <li>Design Thinking A Primer - NPTEL</li>
+        </ul>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+
+    <section id="achievements">
+
+        <h2>Participation & Achievements</h2>
+
+        <ul>
+            <li>Smart India Hackathon</li>
+            <li>Squid Hackathon - Shortlisted for Final Round</li>
+            <li>Adobe India University Hackathon - Shortlisted</li>
+        </ul>
+
+    </section>
+
+    <button type="button" onclick="printResume()">Print Resume</button>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Logalakshmi M. All Rights Reserved.</p>
+
+    <button type="button" onclick="scrollToSection('home')">Back to Top</button>
+
+</footer>
+
+<script src="nav.js"></script>
+
 </body>
 </html>
